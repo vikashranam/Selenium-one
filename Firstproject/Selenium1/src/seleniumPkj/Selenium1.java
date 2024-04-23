@@ -1,0 +1,28 @@
+package seleniumPkj;
+
+
+public class Selenium1 {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "/home/paras/Downloads/CD2/chromedriver");
+
+        // Initialize ChromeDriver
+        WebDriver driver = new ChromeDriver();
+
+        try {
+            // Navigate to the specified URL
+            driver.get("https://mvnrepository.com");
+        } catch (Exception e) {
+            // Print any exceptions that occur
+            e.printStackTrace();
+        } finally {
+            // Close the browser window
+            driver.quit(); // Use quit() instead of close() to ensure all associated windows are closed
+        }
+    }
+}
+	        
+	   
+		
+//		/home/paras/Downloads/CD1/chromedriver_linux64 (1)/chromedriver
+	

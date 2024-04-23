@@ -1,0 +1,20 @@
+package pkj2;
+
+import java.util.Scanner;
+
+public class Statmenta {
+
+	public static void main(String[] args) {
+		Scanner sc1= new Scanner(System.in);
+		
+		System.out.print("Enter First Number:- ");  
+		int x = sc1.nextInt();
+		    
+		int y = 12;    
+		if(x+y > 20) {    
+		System.out.println("x + y is greater than 20");    
+		}    
+
+	}
+
+}
