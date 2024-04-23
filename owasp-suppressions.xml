@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suppressions
+	xmlns="https://jeremylong.github.io/DependencyCheck/dependency-suppression.1.3.xsd">
+	<suppress>
+		<notes><![CDATA[
+      file name: kotlin-stdlib-1.2.71.jar
+      ]]></notes>
+		<packageUrl regex="true">^pkg:maven/org\.jetbrains\.kotlin/kotlin\-stdlib@.*$
+		</packageUrl>
+		<cve>CVE-2019-10101</cve>
+	</suppress>
+	<suppress>
+		<notes><![CDATA[
+   file name: kotlin-stdlib-1.2.71.jar
+   ]]></notes>
+		<packageUrl regex="true">^pkg:maven/org\.jetbrains\.kotlin/kotlin\-stdlib@.*$
+		</packageUrl>
+		<cve>CVE-2019-10102</cve>
+	</suppress>
+	<suppress>
+		<notes><![CDATA[
+   file name: kotlin-stdlib-1.2.71.jar
+   ]]></notes>
+		<packageUrl regex="true">^pkg:maven/org\.jetbrains\.kotlin/kotlin\-stdlib@.*$
+		</packageUrl>
+		<cve>CVE-2019-10103</cve>
+	</suppress>
+	<suppress>
+		<notes><![CDATA[
+   file name: kotlin-stdlib-common-1.2.71.jar
+   ]]></notes>
+		<packageUrl regex="true">^pkg:maven/org\.jetbrains\.kotlin/kotlin\-stdlib\-common@.*$
+		</packageUrl>
+		<cve>CVE-2019-10101</cve>
+	</suppress>
+	<suppress>
+		<notes><![CDATA[
+   file name: kotlin-stdlib-common-1.2.71.jar
+   ]]></notes>
+		<packageUrl regex="true">^pkg:maven/org\.jetbrains\.kotlin/kotlin\-stdlib\-common@.*$
+		</packageUrl>
+		<cve>CVE-2019-10102</cve>
+	</suppress>
+	<suppress>
+		<notes><![CDATA[
+   file name: kotlin-stdlib-common-1.2.71.jar
+   ]]></notes>
+		<packageUrl regex="true">^pkg:maven/org\.jetbrains\.kotlin/kotlin\-stdlib\-common@.*$
+		</packageUrl>
+		<cve>CVE-2019-10103</cve>
+	</suppress>
+	<suppress>
+		<notes><![CDATA[
+   file name: netty-tcnative-classes-2.0.46.Final.jar
+   ]]></notes>
+		<packageUrl regex="true">^pkg:maven/io\.netty/netty\-tcnative\-classes@.*$
+		</packageUrl>
+		<cve>CVE-2019-20445</cve>
+	</suppress>
+	<suppress>
+		<notes><![CDATA[
+   file name: netty-tcnative-classes-2.0.46.Final.jar
+   ]]></notes>
+		<packageUrl regex="true">^pkg:maven/io\.netty/netty\-tcnative\-classes@.*$
+		</packageUrl>
+		<cve>CVE-2019-20444</cve>
+	</suppress>
+	<suppress>
+		<notes><![CDATA[
+   file name: tensorflow-1.15.0.jar
+   ]]></notes>
+		<packageUrl regex="true">^pkg:maven/org\.tensorflow/tensorflow@.*$
+		</packageUrl>
+		<vulnerabilityName>CVE-2021-35958</vulnerabilityName>
+	</suppress>
+	<suppress>
+	   <notes><![CDATA[
+	   file name: spring-.*-5.3.20.jar
+	   We don't use http invoker/features of Spring. In addition it's an old vulnerability
+	   and reactivated by NVD for some unknown reason. Take a look at the references and discussions 
+	   ]]></notes>
+	   <packageUrl regex="true">^pkg:maven/org\.springframework/spring\-.*@.*$</packageUrl>
+	   <cve>CVE-2016-1000027</cve>
+	</suppress>
+	<suppress>
+	   <notes><![CDATA[
+	   file name: snakeyaml-1.30.jar
+	   snakeyaml is being used through redisson->jackson-databind-yaml. 
+	   There is no yaml usage of Redisson in Ant Media Server
+	   ]]></notes>
+	   <packageUrl regex="true">^pkg:maven/org\.yaml/snakeyaml@.*$</packageUrl>
+	   <vulnerabilityName>CVE-2022-1471</vulnerabilityName>
+	</suppress>
+	<suppress>
+	   <notes><![CDATA[
+	   file name: ffmpeg-5.1.2-1.5.8.jar,ffmpeg-platform-5.1.2-1.5.8.jar, cuda-11.8-8.6-1.5.8.jar, cuda-platform-11.8-8.6-1.5.8.jar
+	   This vulnerability is about to github actions of the original repo. It's not related to Ant Media Server.
+	   ]]></notes>
+	   <packageUrl regex="true">^pkg:maven/org\.bytedeco/(ffmpeg|cuda).*@.*$</packageUrl>
+	   <cve>CVE-2023-34112</cve>
+	</suppress>
+
+	
+</suppressions>
